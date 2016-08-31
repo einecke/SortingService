@@ -1,0 +1,89 @@
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ferramenta para envio de dados para o Serviço de triagem">
+  <meta name="author" content="André Pandini Einecke">
+  <title>Ferramenta envio</title>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/offcanvas.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap-table.css">
+</head>
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Triagem de livros</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<div class="container">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-9">
+      <div class="row">
+        <!-- <table id="table"></table> -->
+        <form method="post" action="" id="postForm">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="form-group">
+                <label for="serverUrl">Endereço</label>
+                <input type="text" class="form-control" id="serverUrl" name="serverUrl" required placeholder="Ex.: http://localhost:8080/SortingService/SortingServlet">
+                </br>
+                <label for="serverUrl">Caminho do arquivo de configuração</label>
+                <input type="text" class="form-control" id="configFile" name="serverUrl" required placeholder="C:\config.xml">
+              </div>
+              <div class="text-right">
+                <button id="button" type="submit" class="btn btn-success">Enviar</button>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">Mensensagem de resposta</div>
+            <div class="panel-body">
+              <div class="form-group">
+                <textarea class="form-control" id="msgResposta" name="msgResposta" rows="8" disabled placeholder="Mensagem de retorno"></textarea>
+              </div>
+            </div>
+            <table data-toggle="table" id="table" class="table" >
+              <thead>
+                <tr>
+                  <th data-field="title" style="width:50%">Title</th>
+                  <th data-field="author">Author</th>
+                  <th data-field="year">Edition Year</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </form>
+      </div><!--/row-->
+    </div><!--/.col-xs-12.col-sm-9-->
+  </div><!--/row-->
+  <hr>
+  <footer>
+    <p>&copy; SSC -­ Sorting Service Client.</p>
+  </footer>
+</div><!--/.container-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/js/offcanvas.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/bootstrap-table.js"></script>
+<script src="assets/js/bootstrap-table-editable.js"></script>
+</body>
+</html>
