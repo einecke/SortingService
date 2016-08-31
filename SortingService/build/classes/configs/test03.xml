@@ -1,0 +1,22 @@
+<config>
+	<property>
+		<name>author</name>
+		<active>true</active> 
+		<order>2</order>
+		<descending>true</descending>
+	</property>
+		
+	<property>
+		<name>title</name>
+		<active>true</active> 
+		<order>2</order>
+		<descending>false</descending>
+	</property>
+	
+	<property>
+		<name>year</name>
+		<active>false</active> 
+		<order>1</order>
+		<descending>true</descending>
+	</property>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	<display-name>SortingService</display-name>
+	<description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+
+	<servlet>
+		<description></description>
+		<display-name>SortingServlet</display-name>
+		<servlet-name>SortingServlet</servlet-name>
+		<servlet-class>servlets.SortingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SortingServlet</servlet-name>
+		<url-pattern>/SortingServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

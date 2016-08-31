@@ -1,0 +1,1 @@
+[{"title":"Java How To Program","author":"Deitel \u0026 Deitel","year":2007},{"title":"Internet \u0026 World Wide Web How To Program","author":"Deitel \u0026 Deitel","year":2007},{"title":"Head First Design Patterns","author":"Elisabeth Freeman","year":2004},{"title":"Patterns Of Enterprise Application Architecture","author":"Martin Fowler","year":2002}]
